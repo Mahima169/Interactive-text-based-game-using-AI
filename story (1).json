@@ -1,0 +1,335 @@
+{
+    "start": {
+        "description": "Choose a charecter : Aurora or Alex",
+        "choices": {
+            "aurora": "aurora",
+            "alex": "alex"
+        }
+    },
+    "alex": {
+        "description": "\n In the heart of the Whispering woods, stood a castle of an all powerful wizard, Aldric the Arcane.\n A wizard soo vastly powerful and evil that the tales of his magic kept even the bravest souls at bay.\n But curiosity can be a powerful force, and for you it was irresistible.\n You wake up in a mysterious forest. What do you do?",
+        "choices": {
+            "explore": "explore_forest",
+            "stay": "stay_in_place"
+        }
+    },
+    "aurora": {
+        "description": "\n In the heart of the Whispering woods, stood a castle of an all powerful wizard, Aldric the Arcane.\n A wizard soo vastly powerful and evil that the tales of his magic kept even the bravest souls at bay.\n But curiosity can be a powerful force, and for you it was irresistible.\n You wake up in a mysterious forest. What do you do?",
+        "choices": {
+            "explore": "explore_forest",
+            "stay": "stay_in_place"
+        }
+    },
+             
+    "explore_forest": {
+        "description": "\n You find a strange path. Do you follow it or turn back?",
+        "choices": {
+            "follow": "follow_path",
+            "turn back": "turn_back_to_start"
+        }
+    },
+    "turn_back_to_start":{
+        "description":"\n  In the heart of the Whispering woods, stood a castle of an all powerful wizard, Aldric the Arcane.\n A wizard soo vastly powerful and evil that the tales of his magic kept even the bravest souls at bay.\n But curiosity can be a powerful force, and for you it was irresistible.\n You wake up in a mysterious forest. What do you do?",
+        "choices":{
+            "explore": "explore_forest",
+            "stay": "stay_in_place"
+        }
+    },
+    "stay_in_place": {
+        "description": "\n You decide to stay and wait. Suddenly, you hear rustling in the bushes. What do you do?",
+        "choices": {
+            "investigate": "investigate_bushes",
+            "run": "run_away"
+        }
+    },
+    "investigate_bushes": {
+        "description": "\n You decide to investigate the bushes and you come face to face with a hideous monster that kills you immediately.",
+        "choices":{
+            "death": "you_loose_1"  
+        }
+    },
+    "you_loose_1": {
+        "description": "\n You die, hence you loose one of your 5 lives.\n You are resurected again to the bushes and are asked if you want to ivestigate the bushes or if you want to run away",
+        "choices":{
+            "investigate": "investigate_bushes",
+            "run": "run_away"
+        }
+    },
+    "run_away":{
+        "description": "\n You start running away from the bushes and then you see that you are being followed by a monster, you see a strange path ahead of you.\n You can follow the path or you can fight the monster.",
+        "choices":{
+            "follow":"follow_path",
+            "fight":"fight_monster"
+        }
+    },
+    "fight_monster":{
+        "description":"\nYou decide to fight the monster are immediately killed due to your weak size and your lack of weapons.\n You loose one of your lives.",
+        "choices":{
+            "death":"you_loose_2" 
+        }  
+    },
+    "you_loose_2":{
+        "description":"\n You are resurected bak to your previous position.",
+        "choices":{
+            "follow":"follow_path",
+            "fight":"fight_monster"
+        }
+    },
+    "follow_path":{
+        "description":"\n You decide to follow the path and before you realize it, you have wandered deeper than you have ever before, until the trees part to reveal the towering spires of Aldric’s castle.\n To you your surprise, the monster that’s been following you is nowhere to be seen.\n Happy that you’ve outrun it, you look at the castle.\n The gates are open, as if they were beckoning you inside.",
+        "choices":{
+            "go inside": "enter_castle",
+            "go back": "go_back_into_forest"
+        }
+    },
+    "go_back_into_forest":{
+        "description":"\n You find you self back in the forest wandering around aimlessly, then you see that there is some rustling from the bushes around you.",
+        "choices":{
+            "investigate": "investigate_bushes",
+            "run": "run_away"
+        }
+    },
+    "enter_castle": {
+        "description": "\n You hesitate but only for a moment. With a deep breath, you walk across the bridge.\n Cautiously you step across the threshold. The gates slam shut behind you with a deafening clang, and the ground trembles. you find yourself trapped. The only way ahead is to move forward.",
+        "choices":{
+            "move forward": "move_forward"
+        }
+    },
+    "move_forward":{
+        "description":"\n The castle is a maze of twisting corridors and staircases that seemed to lead nowhere.\n As you wander, you begin to feel a strange energy in the air, as if the very floors were alive with magic.\n You turn a corner and you find yourself in a vast chamber, the walls lined with Glowing runes.\n\nIn the center of the room stands a pedestal, upon which lies a small, ornate mirror.\n As you approached it, the runes flared brightly, and the air crackled with power.\n The floor beneath you begins to shift, revealing a series of stone platforms suspended over a bottomless pit.\n\nThe platforms move and twist creating a shifting path towards the mirror.\n You know that this is your first of many challenges.\n\nYou can choose to jump onto the platform or the bottomless pit.",
+        "choices":{
+            "jump onto platform":"jump_onto_platform",
+            "jump into bottomless pit":"jump_into_bottomless_pit"
+        }
+    },
+    "jump_onto_platform": {
+        "description":"\n You carefully leap from one platform to the next, your heart pounding with each jump.\n The platforms speed up, but you remain focused, your determination unwavering.\n With one final leap, you reach the pedestal and grab the mirror.\n\n As you hold it, the runes dim, and the platforms return to their original positions.\n The mirror feels warm in your hands, and when you look into it, you see not your reflection, but a vision of the castle’s layout.\n The mirror will guide you.\n\n You gain 100 points for jumping successfully over the platforms and another 100 points for securing the magic mirror.",
+        "choices":{
+            "collect 100 points":"collect_100_points"
+        }
+    },
+    "jump_into_bottomless_pit":{
+        "description":"\nYou jump into the bottomless pit filled with lava and die with your blood curdling screams filling the air.\n You loose one of your 5 lives.",
+        "choices":{
+            "death":"you_loose_3"
+        }
+    },
+    "you_loose_3":{
+        "description":"\n You are transported back to your previous position and can now choose to jump into the bottomless pit or onto the shifting platforms.",
+        "choices":{
+            "jump onto platform":"jump_onto_platform",
+            "jump into bottomless pit":"jump_into_bottomless_pit"
+        }
+    },
+    "collect_100_points":{
+        "description":"\n you have completed the first level congratulations.",
+        "choices":{
+            "follow the mirror":"follow_the_mirror",
+            "turn back": "turn_back"
+        }
+    },
+    "follow_the_mirror":{
+        "description":"\n The mirror leads you to a long hallway.\n Squinting, you can see that at the end of the hallway stands a tall door made of black iron.\n The only light in this hallway is from a torch at the far end of it beside the iron door.\n\n You take one step towards the door and immediately you start to see shadows moving on their own accord, whispering in voices that echo in your mind.\n The shadows begin to take form, becoming dark, twisted creatures that lunge at you with ghostly claws.",
+        "choices":{
+            "use the mirror":"use_the_mirror",
+            "fight on your own":"fight_shadows_on_own",
+            "turn back":"go_back_to_shifting_platforms_chamber"
+        }
+    },
+    "go_back_to_shifting_platforms_chamber":{
+        "description":"\n You find yourself at the entrance of the shifting platforms chamber.",
+        "choices":{
+            "follow the mirror":"follow_the_mirror",
+            "turn back":"turn_back_to_entrance"
+        }
+    },
+    "turn_back_to_entrance":{
+        "description":"\n You find yourself back at the entrance of the castle. the door is closed so you can only move forward. ",
+        "choices":{
+            "move forward":"move_forward"
+        }
+    },
+    "use_the_mirror":{
+         "description":"\n Remembering the mirror, you hold it up, and the light from the torch reflects off its surface, casting beams of light around the room.\n The shadows recoil, hissing in pain.\n With each step you take, you banish more of the creatures, until only one remains.\n This shadow is larger than the rest, and its whispers are louder, more insistent.\n\n But you are not afraid.\n You focus the light of the mirror on the shadow, and it begins to dissolve, its whispers turning to shrieks.\n When the shadow finally vanishes, the room is silent.\n You pick up the torch, feeling its warmth, and move on.",
+         "choices":{
+            "collect 200 points":"collect_200_points"
+         }
+    },
+    "fight_shadows_on_own":{
+        "description":"\n You try to fight the shadows with your own strength but you are not able to gain an upper hand as they start to over power you.\n You get toppled over onto the floor and the shadows hold you tight against the floor, you are unable to move.\n That is when from the corner of your eye you see the biggest shadow crawling towards you. You feel scared for you life.\n The Shadow seeps inside you through your nostrils and suddenly everything stops, all the shadows are gone.\n You breathe a sigh of relief thinking that the worst is over and take a step towards the iron door when you suddenly start to get a splitting headache.\n Its soo painful that you start to loose your vision. The unbearable pain makes you see white.\n You collapse from the pain and when you wake up again you see that you have lost one of your lives.\n\n You can see the shadows again and you are asked to choose again weather you want to use the mirror, go back, or fight them on your own.",
+        "choices":{
+            "death":"you_loose_4"
+        }
+    },
+    "you_loose_4":{
+        "description":"\n You are transported back to your previous position.\n You again have 3 options before you, use the mirror, fight on your own, or turn back, the choice is yours.",
+        "choices":{
+            "use the mirror":"use_the_mirror",
+            "fight on own":"fight_shadows_on_own",
+            "turn back":"go_back_to_shifting_platforms_chamber"
+        }
+    },
+    "collect_200_points":{
+        "description":"\n Congratulations, you have completed the second level.",
+        "choices":{
+            "move forward":"move_forward_iron_door"
+        }
+    },
+    "move_forward_iron_door":{
+        "description":"\n You open the large iron door and enter what seems to be a labyrinth of stone walls, all leading to a massive table on which there seems to a piece of paper with something written on it.\n As you begin to approach the table, the labyrinth starts to grow taller till you can’t see the table anymore.\n Then its various paths start shifting and morphing such that there is a new pattern formed.\n As you start walking into the labyrinth, you start to feel the walls closing in on you at every step.\n You can choose to use the mirror map and run through the maze, you can choose to climb onto the wall and run to the table from on top of the walls, you can choose to run through the labyrinth without the help of the mirror or you can turn back.",
+        "choices":{
+            "use the mirror to run":"use_mirror_to_run",
+            "climb onto wall and run":"climb_wall_and_run",
+            "turn back to hallway of shadows":"turn_back_to_hallway_of_shadows",
+            "keep running without using mirror":"keep_running_without_using_mirror"
+        }
+    },
+    "use_mirror_to_run":{
+        "description":"\n You use the mirror and follow its directions to carefully and quickly navigate through the labyrinth and make it to the table at the end just as the walls of the labyrinth completely close.\n\n You go to the table and pick up the piece of paper on it. It has some incantations written on it in an unknown language.\n As you start to read them out loud, the different runes on the walls of the labyrinth start to shine. Your mirror starts to vibrate, and levitate.\n As you keep reading the paper your mirror starts to glow as well. Just as you finish reading the incantations, your mirror stops glowing and levitates back onto the table.\n You pick it up to see if anything is wrong, but you find that its been enhanced, the map on it shows you not only the route but also the dangers that lie ahead.\n\n You gain 100 points for escaping the labyrinth, and another 100 points for upgrading your mirror.",
+        "choices":{
+            "collect 200 points":"collect_200_points_1"
+        }
+    },
+    "climb_wall_and_run":{
+        "description":"\n Grabbing the stone wall, you quickly climb onto it, from the top you have a clear view of the table and are able to easily navigate to it.\n You start walking to the table as you find yourself unable to run due to the narrowness and slipperiness of  the walls.\n The walls close in and start rearranging themselfs to form a new pattern. You would have been crushed, have you not climbed onto the walls.\n It takes you some time but you finally make it to the end of the labyrinth and jump off the walls.\n You land right in front of the table.\n\n You go to the table and pick up the piece of paper on it. It has some incantations written on it in an unknown language.\n As you start to read them out loud, the different runes on the walls of the labyrinth start to shine.\n Your mirror starts to vibrate, and levitate. As you keep reading the paper your mirror starts to glow as well.\n Just as you finish reading the incantations, your mirror stops glowing and levitates back onto the table.\n You pick it up to see if anything is wrong, but you find that its been enhanced, the map on it shows you not only the route but also the dangers that lie ahead.\n\n You gain 100 points for escaping the labyrinth, 100 points for upgrading your mirror.",
+        "choices":{
+            "collect 200 points":"collect_200_points_1"
+        }
+    },
+    "turn_back_to_hallway_of_shadows":{
+        "description":"\n You choose to turn back and find yourself in the whispering shadows hallway.",
+        "choices":{
+            "turn back":"go_back_to_shifting_platforms_chamber",
+            "move forward":"move_forward_iron_door"
+            
+        }
+    },
+    "keep_running_without_using_mirror":{
+        "description":"\n You start running deeper into the labyrinth. The walls are starting to close in on you. You have a vague idea of where the table might be.\n As you keep making your way deeper into the labyrinth, you keep getting lost.\n Finally as you are lost in the labyrinth, the walls close in on you, crushing you.\n\n When you open your eyes again, you see that you’re at the beginning of the labyrinth. You’ve lost one of your lives.",
+        "choices":{
+            "death":"you_loose_5"
+        }
+    },
+    "you_loose_5":{
+        "description":"\nYou can choose to use the mirror map and run through the maze, you can choose to climb onto the wall and run to the table from on top of the walls, you can choose to run through the maze without using the mirror or you can turn back.",
+        "choices":{
+            "use the mirror to run":"use_mirror_to_run",
+            "climb onto wall and run":"climb_wall_and_run",
+            "turn back to hallway of shadows":"turn_back_to_hallway_of_shadows",
+            "keep running without using mirror":"keep_running_without_using_mirror"
+        }
+    },
+    "collect_200_points_1":{
+        "description":"\n Congratulations, you have completed the third level.",
+        "choices":{
+            "move forward":"move_forward_to_door_behind_table"
+        }
+    },
+    "move_forward_to_door_behind_table":{
+        "description":"\nYou see that there is a door behind the table. You open it to find yourself in a massive chamber filled with fire.\n The heat is intense, and the air shimmering with it. In the center of the room, surrounded by a ring of flames, stands a stone pedestal with a sword embedded in it.\n The blade is made of a strange metal that is glowing with a fierce light.\n\n As you approach the sword, the flames roar higher, and from the fire emerges a guardian—a towering figure made of living flame, its eyes burning with an ancient fury.\n The guardian roars, and the flames around it surge, forming a barrier that you cannot pass.\n\n You can either use the torch, fight the guardian unarmed, or you can turn back.",
+        "choices":{
+            "use the torch to defeat the fire guardian":"use_the_torch",
+            "fight the guardian unarmed":"fight_guardian_unarmed",
+            "turn back":"turn_back_to_labyrinth"
+        }
+    },
+    "use_the_torch":{
+        "description":"\n You remembered the torch that you’ve taken from the shadow chamber and you hold it aloft. The flames on the torch flare brighter, and the barrier of fire begins to waver.\n The guardian, sensing the power of the torch, charges at you, but you are ready.\n\n With a swift motion, You throw the torch at the guardian.\n The flames from the torch clash with the guardian’s fire, and for a moment, the entire room is filled with blinding light.\n When the light fades, the guardian is gone, and the flames subside.\n\n You approach the pedestal and pull the sword from the stone. As you pull, you feel a surge of power flow through you.\n The sword is no ordinary weapon; it is enchanted with the power of fire, and it would be your greatest ally in the trials to come.\n\n You gain 100 points for defeating the guardian and another 100 points for acquiring the sword of flames.",
+        "choices":{
+            "collect 200 points":"collect_200_points_2"
+        }
+    },
+    "fight_guardian_unarmed":{
+        "description":"\n You charge toward the guardian unarmed, fully prepared to take him on with your own strength.\n The guardian charges at you too and before you know it you are completely surrounded by flames.\n You do not know what to do as the flames engulf you are burned alive.",
+        "choices":{
+            "death":"you_loose_6"
+        }
+    },
+    "you_loose_6":{
+        "description":"\n When you open your eyes again, you find yourself facing the guardian again, you see that you’ve lost one of your lives.\n\n You can either use the torch, or you can fight the guardian unarmed, or you can turn back.",
+        "choices":{
+            "use the torch to defeat the fire guardian":"use_the_torch",
+            "fight the guardian unarmed":"fight_guardian_unarmed",
+            "turn back":"turn_back_to_labyrinth"
+        }
+    },
+    "turn_back_to_labyrinth":{
+        "description":"\n You find yourself infront of the labyrinth of stones.You can choose to turn back or move forward.",
+        "choices":{
+            "turn back":"turn_back_to_hallway_of_shadows",
+            "move forward":"move_forward_to_door_behind_table"
+        }
+    },
+    "collect_200_points_2":{
+        "description":"\n Congratulations, you have completed the fourth level.",
+        "choices":{
+            "move forward":"move_forward_to_wooden_door"
+        }
+    },
+    "move_forward_to_wooden_door":{
+        "description":"\n You open the wooden door nearest to the sword.\n You enter a grand hall where stone, metal, and shadowy golems stand guard. These magical constructs are motionless at first but spring to life as soon as you enter the hall, their eyes glowing with an ominous light.\n\n You can either use the artifacts to defeat the golems or you can use your quick thinking and your reflexes to defeat the golems.",
+        "choices":{
+            "use the artifacts to defeat the golems":"use_artifacts_for_golems",
+            "dont use the artifacts to defeat the golems":"dont_use_artifacts_for_golems"
+        }
+    },
+    "use_artifacts_for_golems":{
+        "description":"\n The golems are nearly invulnerable, each one requiring different tactics to defeat.\n You use the power of the Flame bound Sword to melt the metal golems, the Torch of Clarity to dispel the shadow golems, and your quick reflexes to outmaneuver the stone golems, tricking them to crash into one another.\n\n Defeating the Golems has cleared the path for you and you find yourself in front of a huge copper door. You can sense through the door the powerful being who awaits you.\n\n You get 100 points for defeating the golems.",
+        "choices":{
+            "collect 100 points":"collect_100_points_1"
+        }
+    },
+    "collect_100_points_1":{
+        "description":"\n You can choose to move forward through the door or turn back.",
+        "choices":{
+            "move forward through copper door":"move_forward_through_copper_door",
+            "turn back":"turn_back_to_guardians_room"
+        }
+    },
+    "turn_back_to_guardians_room":{
+        "description":"\n You find your self back in the fire guardians room, you can choose to move forward or backward.",
+        "choices":{
+            "move forward":"move_forward_to_wooden_door",
+            "turn back":"turn_back_to_labyrinth"
+        }
+    },
+    "dont_use_artifacts_for_golems":{
+        "description":"\n As you face the golems, you use your fast reflexes to out maneuver the stone golems and they crash against each other.\n You try the same tactic to defeat the shadow golems and the metal golems but it doesn't work as you planed the shadow and metal golems being lighter and stealthier than the stone golems, easily reach you and tear you apart.\n\n A flash of light later you find yourself at the entrance of the hall of golems, you see that you’ve lost a life.",
+        "choices":{
+            "death":"you_loose_7"
+        }
+    },
+    "you_loose_7":{
+        "description":"\n You can either use the artifacts to defeat the golems or you can use your quick thinking and your reflexes to defeat the golems.",
+        "choices":{
+            "use the artifacts to defeat the golems":"use_artifacts_for_golems",
+            "don't use the artifacts to defeat the golems":"dont_use_artifacts_for_golems"
+        }
+    },
+    "move_forward_through_copper_door":{
+        "description":"\n You have finally reached the heart of the castle. On the other side of the copper door you find your self face to face with Aldric the Arcane.\n He seems to have been waiting for you.\n\n Aldric is a tall, imposing figure, his robes shimmering with arcane symbols, his eyes glowing with power.\n Behind him stands an army of magical constructs—golems made of stone, metal, and shadow, all waiting for their master’s command.\n\n “You’ve done well to come this far,” Aldric says, his voice echoing through the hall. “But this is where your journey ends.”\n\n You tighten your grip on the sword. “I’m not afraid of you, Aldric. I’ve faced your challenges, and I’ve won.\n I’m not leaving this castle until you’re defeated.”\n\n Aldric laughs, a cold, cruel sound. “Brave words, child. But let’s see how you fare against my army.”\n\n With a wave of his hand, Aldric unleashes his constructs. They charge at you, their eyes glowing with malice.\n\n You can choose to fight against Aldric using your magical artifacts or you can turn back.",
+        "choices":{
+            "fight Aldric using magical artifacts":"fight_aldric",
+            "turn back":"turn_back_to_hall_of_golems"
+        }
+    },
+    "turn_back_to_hall_of_golems":{
+        "description":"\n You immediately get zapped by Aldric’s magic and die. (Game over)",
+        "choices":{
+            "you have lost the game, game over":"you_loose_final"
+        }
+    },
+    "fight_aldric":{
+        "description":"\n You are ready. You hold up the mirror, and beams of light shoot out, blinding the golems and causing them to stumble.\n You swing your sword, the blade cutting through the air with a fiery arc, and the golems shatter under its power.\n\n One by one, the constructs fall, until only Aldric remains. The wizard’s smile fades, replaced by a look of anger.\n “You think you can defeat me?” he snarls. “I am Aldric the Arcane! My power is unmatched!”\n\n You take a deep breath, focusing all your energy. You hold up the sword, its blade glowing with the combined power of all the artifacts you’ve collected.\n “This ends now,” you say.\n\n Aldric raises his hands, summoning a massive storm of dark magic, but you are faster. You charge at the wizard, the sword blazing with light.\n As both your powers clash, the castle trembles, and the air fills up with the sound of shattering stone and roaring magic.\n\n With a final, mighty swing, you strike Aldric down. The wizard’s magic falters, and he lets out a cry of rage as he is consumed by the light of the sword.",
+        "choices":{
+            "you've won":"you_have_defeated_aldric"
+        }
+    },
+    "you_have_defeated_aldric":{
+        "description":"\n With the wizard defeated, the castle’s magic began to fade. The walls shake, and the ceiling starts to collapse.\n You know you have to escape, but the exit is nowhere in sight.\n\n You look into the mirror one last time, and it shows you the way—a hidden passage behind the throne where Aldric had stood.\n You run toward it as the castle continues to fall apart, debris crashing down around you.\n\n You reach the passage just as the ceiling gives way, and with one final leap, you dove through the doorway.\n The passage leads you out of the castle and into the open air, just as the entire structure collapses into a pile of rubble behind you.\n\n Breathing heavily, You look back at the ruins of the castle.\n The artifacts you have collected are now gone, their magic spent, but you have done what no one else has—you have defeated Aldric the Arcane.\n\n As the sun rises over the Whispering Woods, you begin your journey home, knowing that you have earned a place in the legends of your people.",
+        "choices":{
+            "you have won the game, game over":"you_win"
+        }
+    }
+
+}
